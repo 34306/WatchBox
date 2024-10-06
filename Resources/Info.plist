@@ -5,9 +5,9 @@
 	<key>ALTDeviceID</key>
 	<string></string>
 	<key>CFBundleDisplayName</key>
-	<string>SparseBox</string>
+	<string>WatchBox</string>
 	<key>CFBundleExecutable</key>
-	<string>SparseBox</string>
+	<string>WatchBox</string>
 	<key>CFBundleIcons</key>
 	<dict>
 		<key>CFBundlePrimaryIcon</key>
@@ -34,11 +34,11 @@
 		</dict>
 	</dict>
 	<key>CFBundleIdentifier</key>
-	<string>com.kdt.sparsebox</string>
+	<string>com.34306.WatchBox</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>SparseBox</string>
+	<string>WatchBox</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>

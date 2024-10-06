@@ -4,7 +4,7 @@ TARGET := iphone:clang:latest:16.0
 
 include $(THEOS)/makefiles/common.mk
 
-APPLICATION_NAME = SparseBox
+APPLICATION_NAME = WatchBox
 LIBRARY_NAME = libEMProxy libimobiledevice
 
 # Link em_proxy separately as it has duplicated symbols with minimuxer
@@ -24,12 +24,11 @@ libimobiledevice_LDFLAGS = \
   -force_load lib/libcrypto.a \
   -force_load lib/libssl.a \
   -force_load lib/libminimuxer-ios.a \
-  -Wl,-mllvm,--opaque-pointers \
   -install_name @rpath/libimobiledevice.dylib
 libimobiledevice_FRAMEWORKS = Foundation Security SystemConfiguration
 libimobiledevice_INSTALL_PATH = /Applications/$(APPLICATION_NAME).app/Frameworks
 
-SparseBox_FILES = \
+WatchBox_FILES = \
   include/minimuxer-helpers.swift \
   include/minimuxer.swift \
   include/em_proxy.swift \
@@ -55,11 +54,11 @@ SparseBox_FILES = \
   Sources/SwiftNIO/NIOCore/ByteBuffer-int.swift \
   Sources/SwiftNIO/NIOPosix/PointerHelpers.swift \
   Sources/ContentView.swift
-SparseBox_FRAMEWORKS = UIKit
-SparseBox_CFLAGS = -fcommon -fobjc-arc
-SparseBox_SWIFTFLAGS = -Iinclude -import-objc-header include/minimuxer-Bridging-Header.h
-SparseBox_LDFLAGS = -L$(THEOS_OBJ_DIR) -rpath @executable_path/Frameworks
-SparseBox_LIBRARIES = EMProxy imobiledevice
-SparseBox_CODESIGN_FLAGS = -Sentitlements.plist
+WatchBox_FRAMEWORKS = UIKit
+WatchBox_CFLAGS = -fcommon -fobjc-arc
+WatchBox_SWIFTFLAGS = -Iinclude -import-objc-header include/minimuxer-Bridging-Header.h
+WatchBox_LDFLAGS = -L$(THEOS_OBJ_DIR) -rpath @executable_path/Frameworks
+WatchBox_LIBRARIES = EMProxy imobiledevice
+WatchBox_CODESIGN_FLAGS = -Sentitlements.plist
 include $(THEOS_MAKE_PATH)/library.mk
 include $(THEOS_MAKE_PATH)/application.mk

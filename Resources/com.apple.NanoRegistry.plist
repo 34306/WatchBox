@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IOS_PAIRING_EOL_MIN_PAIRING_COMPATIBILITY_VERSION_CHIPIDS</key>
+	<string></string>
+	<key>maxPairingCompatibilityVersion</key>
+	<integer>99</integer>
+	<key>minPairingCompatibilityVersion</key>
+	<integer>1</integer>
+	<key>minPairingCompatibilityVersionWithChipID</key>
+	<integer>1</integer>
+</dict>
+</plist>

@@ -1,17 +1,21 @@
-# SparseBox
+# WatchBox, copied from SparseBox
 
-On-device backup restoration?
+## TEMPORARY BROKEN, STILL A PROOF OF CONCEPT.
 
-- [x] rewrote SparseRestore to swift
+Help pairing old iOS devices with new watchOS without jailbreaking/TrollStore or updating iOS.
+
+- Take some code from [Lemin's file](https://github.com/leminlimez/Nugget-Mobile/blob/main/Nugget/Sparserestore/Restore.swift) (for HomeDomain stuff in CBL)
 
 ## Installation
 SideStore is recommended as you will also be getting the pairing file and setting up VPN.
 
-Download ipa from Actions tab or [nightly.link](https://nightly.link/khanhduytran0/SparseBox/workflows/build/main/artifact.zip)
+Download ipa from [here](https://github.com/34306/WatchBox/blob/main/packages/com.34306.watchbox_0.0.1-4+debug.ipa)
 
 Before opening SparseBox, you have to close SideStore from app switcher. This is because only one app can use VPN proxy at a time. Maybe changing port could solve this issue.
 
 ## Thanks to
+- @khanhduytran0: SparseBox
+- @leminlimez: Restore thing
 - @SideStore: em_proxy and minimuxer
 - @JJTech0130: SparseRestore and backup exploit
 - @PoomSmart: MobileGestalt dump
