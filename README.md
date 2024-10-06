@@ -6,6 +6,11 @@ Help pairing old iOS devices with new watchOS without jailbreaking/TrollStore or
 
 - Take some code from [Lemin's file](https://github.com/leminlimez/Nugget-Mobile/blob/main/Nugget/Sparserestore/Restore.swift) (for HomeDomain stuff in CBL)
 
+## Preview
+<p align="center">
+  <img src="https://raw.githubusercontent.com/34306/WatchBox/refs/heads/main/IMG_7652.png" width="350" title="Preview">
+</p>
+
 ## Installation
 SideStore is recommended as you will also be getting the pairing file and setting up VPN.
 
